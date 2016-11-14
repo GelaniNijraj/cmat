@@ -100,12 +100,12 @@ After installation, import `cmat` and use any of the following functions.
 	Returns the largest element in the matrix `m`.
     
     
-* ```MATRIX* cmat_transpose(MATRIX* m);```
+* ```MATRIX* cmat_transpose(MATRIX* m);``` (TODO)
 
 	Returns the transpose matrix of the matrix `m`.
     
     
-* ```MATRIX* cmat_normalize(MATRIX* m);```
+* ```MATRIX* cmat_normalize(MATRIX* m);``` (TODO)
 
 	Returns the normalized version of the matrix `m`.
 
