@@ -1,4 +1,4 @@
-void cmat_pretty_display(MATRIX* m){
+void cmat_display(MATRIX* m){
 	int i, j;
 	for(i = 0; i < m->rows; i++){
 		for(j = 0; j < m->cols; j++){
