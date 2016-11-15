@@ -20,5 +20,8 @@ int cmat_set(MATRIX* m, int row, int col, double data){
 }
 
 double cmat_get(MATRIX* m, int row, int col){
-    return m->data[col + (row * m->cols)];
+	if(row < m->rows && col < m->cols)
+		return m->data[col + (row * m->cols)];
+	else
+		return 0;
 }

@@ -24,7 +24,7 @@ After installation, import `cmat` and use any of the following functions.
     
 * ```double cmat_get(MATRIX* m, int row, int col);```
 	
-    Returns the value stored at (`row`, `col`) in matrix `m`.
+    Returns the value stored at (`row`, `col`) in matrix `m`; 0 if either `row` or `col` is out of bounds.
     
 ### Arithmetic Functions
 * ```MATRIX* cmat_add_const(MATRIX* m, double a);```
