@@ -1,3 +1,7 @@
+#include <stdio.h>
+
+#include "cmat.h"
+
 void cmat_display(MATRIX* m){
 	int i, j;
 	for(i = 0; i < m->rows; i++){

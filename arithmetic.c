@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "cmat.h"
+
 MATRIX* cmat_add_const(MATRIX* m, double a){
 	int i, j;
     MATRIX* result = cmat_malloc(m->rows, m->cols);

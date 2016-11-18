@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "cmat.h"
+
 MATRIX* cmat_malloc(int rows, int cols){
     MATRIX *m = (MATRIX*) malloc(sizeof(MATRIX));
     m->rows = rows;

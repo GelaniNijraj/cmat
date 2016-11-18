@@ -4,7 +4,20 @@ A small C library for matrix manipulation.
 
 ## Usage
 
-After installation, import `cmat` and use any of the following functions.
+To install, run following commands from terminal :
+
+```
+make
+make install
+```
+
+At compilation, use `-lcmat` flag. i.e.
+
+```
+gcc sample.c -lcmat
+```
+
+After installation, include `cmat` and use any of the following functions.
 
 ### Basic Functions
 * ```MATRIX* cmat_malloc(int r, int c);```
@@ -112,4 +125,4 @@ After installation, import `cmat` and use any of the following functions.
 
 ## License
 
-The code is licensed under GNU General Public License v3.
+Copyright (C) 2016  Nijraj Gelani (GPL 3.0)
