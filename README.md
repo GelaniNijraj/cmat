@@ -72,7 +72,7 @@ After installation, include `cmat` and use any of the following functions.
     
 * ```MATRIX* cmat_multiply(MATRIX* m, MATRIX* n);```
 
-	Performs matrix manipulation on matrices `m` and `n` and returns the answer matrix.
+	Performs matrix multiplication on matrices `m` and `n` and returns the answer matrix.
     
     
 ### Special Matrices
