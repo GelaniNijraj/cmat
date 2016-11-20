@@ -11,6 +11,8 @@ make
 make install
 ```
 
+Use `LIB_PATH` and `INCLUDE_PATH` to install the library in specific directory. By default, library is installed at `/usr/local/lib` and header file is stored at `/usr/local/include`.
+
 At compilation, use `-lcmat` flag. i.e.
 
 ```
