@@ -115,7 +115,7 @@ After installation, include `cmat` and use any of the following functions.
 	Returns the largest element in the matrix `m`.
     
     
-* ```MATRIX* cmat_transpose(MATRIX* m);``` (TODO)
+* ```MATRIX* cmat_transpose(MATRIX* m);```
 
 	Returns the transpose matrix of the matrix `m`.
     
@@ -123,6 +123,16 @@ After installation, include `cmat` and use any of the following functions.
 * ```MATRIX* cmat_normalize(MATRIX* m);``` (TODO)
 
 	Returns the normalized version of the matrix `m`.
+
+
+## TODO
+
+- [x] Transpose
+- [ ] Normalization
+- [ ] Determinant and rank of the matrix
+- [ ] Inverse of a matrix
+- [ ] Gaussian Reduction
+- [ ] Reshaping and merging
 
 
 ## License
