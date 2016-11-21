@@ -127,4 +127,4 @@ After installation, include `cmat` and use any of the following functions.
 
 ## License
 
-Copyright (C) 2016  Nijraj Gelani (GPL 3.0)
+Copyright (C) 2016  Nijraj Gelani (MIT)
