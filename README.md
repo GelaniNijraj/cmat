@@ -120,7 +120,7 @@ After installation, include `cmat` and use any of the following functions.
 	Returns the transpose matrix of the matrix `m`.
     
     
-* ```MATRIX* cmat_normalize(MATRIX* m);``` (TODO)
+* ```MATRIX* cmat_normalize(MATRIX* m);```
 
 	Returns the normalized version of the matrix `m`.
 
@@ -128,7 +128,7 @@ After installation, include `cmat` and use any of the following functions.
 ## TODO
 
 - [x] Transpose
-- [ ] Normalization
+- [x] Normalization
 - [ ] Determinant and rank of the matrix
 - [ ] Inverse of a matrix
 - [ ] Gaussian Reduction

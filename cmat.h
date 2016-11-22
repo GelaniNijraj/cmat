@@ -43,6 +43,8 @@ MATRIX* cmat_multiply(MATRIX*, MATRIX*);
 
 MATRIX* cmat_transpose(MATRIX*);
 
+MATRIX* cmat_normalize(MATRIX*);
+
 
 #ifdef __cplusplus
 }

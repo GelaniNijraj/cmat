@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -Werror -pedantic-errors -std=c99
-INPUT=init.c views.c arithmetic.c operations.c special_metrices.c
-OUTPUT=init.o views.o arithmetic.o operations.o special_metrices.o
+INPUT=init.c views.c arithmetic.c operations.c special_matrices.c
+OUTPUT=init.o views.o arithmetic.o operations.o special_matrices.o
 LIB_OUTPUT=libcmat.a
 INCLUDE_FILE=cmat.h
 LIB_PATH=/usr/local/lib

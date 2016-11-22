@@ -35,7 +35,26 @@ MATRIX* cmat_transpose(MATRIX* m){
 	return transpose;
 }
 
-MATRIX* cmat_normalize(MATRIX* m){ return NULL; }
+MATRIX* cmat_normalize(MATRIX* m){ 
+	int i, j;
+	double min = 0, max = 0;
+	MATRIX* normalized = cmat_malloc(m->rows, m->cols);
+	// Finding the minimum and maximum elements
+	for(i = 0; i < m->rows; i++){
+		for(j = 0; j < m->cols; j++){
+			double tmp = cmat_get(m, i, j);
+			if(tmp < min)
+				min = tmp;
+			if(tmp > max)
+				max = tmp;
+		}
+	}
+	for(i = 0; i < m->rows; i++){
+		for(j = 0; j < m->cols; j++)
+			cmat_set(normalized, i, j, (cmat_get(m, i, j) - min) / (max - min));
+	}
+	return normalized;
+}
 
 MATRIX* cmat_combine_x(MATRIX* m, MATRIX* n){ return NULL; }
 
