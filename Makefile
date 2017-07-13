@@ -9,6 +9,7 @@ DESTDIR=/usr/local
 
 .PHONY: build
 build:
+	mkdir -p build
 	$(CC) -c $(SRC) $(CFLAGS)
 	mv *.o build/
 	ar rcs $(LIB_OUTPUT) $(OBJ)
