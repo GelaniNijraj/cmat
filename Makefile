@@ -1,19 +1,23 @@
 CC=gcc
+SRC=$(wildcard src/*.c)
+TMP=$(subst src, build, $(SRC))
+OBJ=$(TMP:.c=.o)
 CFLAGS=-Wall -Werror -pedantic-errors -std=c99
-INPUT=init.c views.c arithmetic.c operations.c special_matrices.c
-OUTPUT=init.o views.o arithmetic.o operations.o special_matrices.o
-LIB_OUTPUT=libcmat.a
-INCLUDE_FILE=cmat.h
-LIB_PATH=/usr/local/lib
-INCLUDED_PATH=/usr/local/include
+LIB_OUTPUT=build/libcmat.a
+INCLUDE_FILE=include/cmat.h
+DESTDIR=/usr/local
 
+.PHONY: build
 build:
-	$(CC) -c $(INPUT) $(CFLAGS)
-	ar rcs $(LIB_OUTPUT) $(OUTPUT)
+	$(CC) -c $(SRC) $(CFLAGS)
+	mv *.o build/
+	ar rcs $(LIB_OUTPUT) $(OBJ)
 
 install: build
-	cp $(LIB_OUTPUT) $(LIB_PATH)/$(LIB_OUTPUT)
-	cp $(INCLUDE_FILE) $(INCLUDED_PATH)/$(INCLUDE_FILE)
 
+	cp $(LIB_OUTPUT) $(DESTDIR)/lib/
+	cp $(INCLUDE_FILE) $(DESTDIR)/include/
+
+.PHONY: clean
 clean:
-	rm -f $(OUTPUT) $(LIB_OUTPUT)
+	rm -f $(OBJ)
