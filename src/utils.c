@@ -56,3 +56,21 @@ void cmat_abort(char* msg){
 	fprintf(stderr, "%s\n", msg);
 	exit(1);
 }
+
+void cmat_row_exchange(MATRIX *m, int row1, int row2) {
+	double temp;
+	for (int i = 0; i < m->cols; i++) {
+		temp = cmat_get(m, row1, i);
+		cmat_set(m, row1, i, cmat_get(m, row2, i));
+		cmat_set(m, row2, i, temp);
+	}
+}
+
+void cmat_col_exchange(MATRIX *m, int col1, int col2) {
+	double temp;
+	for (int i = 0; i < m->rows; i++) {
+		temp = cmat_get(m, i, col1);
+		cmat_set(m, i, col1, cmat_get(m, i, col2));
+		cmat_set(m, i, col2, temp);
+	}
+}
