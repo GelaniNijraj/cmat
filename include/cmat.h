@@ -109,6 +109,10 @@ MATRIX *cmat_sum_y(MATRIX *);
 
 MATRIX *cmat_submatrix(MATRIX *, int, int, int, int);
 
+int cmat_determinant(MATRIX *, double *);
+
+int cmat_lu_decompose(MATRIX *, MATRIX *, MATRIX *);
+
 // Views
 void cmat_display(MATRIX *);
 
@@ -122,6 +126,10 @@ void cmat_for_each_row(MATRIX *, void (*)(MATRIX *, int));
 int cmat_has_same_dimensions(MATRIX *, MATRIX *);
 
 int cmat_to_file(MATRIX *, const char *);
+
+void cmat_row_exchange(MATRIX*, int, int);
+
+void cmat_col_exchange(MATRIX*, int, int);
 
 #ifdef __cplusplus
 }
