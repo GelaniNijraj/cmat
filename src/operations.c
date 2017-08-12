@@ -132,6 +132,8 @@ int cmat_determinant(MATRIX *m, double *result) {
 	MATRIX *l = cmat_malloc_shape(m), *u = cmat_malloc_shape(m);
 	parity = cmat_lu_decompose(m, l, u);
 	*result = cmat_determinant_triangular(l) * cmat_determinant_triangular(u) * (parity % 2 == 1 ? -1 : 1);
+    cmat_free(l);
+    cmat_free(u);
 	return CMAT_SUCCESS;
 }
 
