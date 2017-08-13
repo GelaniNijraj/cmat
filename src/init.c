@@ -19,7 +19,7 @@ MATRIX* cmat_from_file(int rows, int cols, const char* file){
     int i, j;
     FILE* fp;
     double t;
-    MATRIX *m = (MATRIX*) cmat_malloc(rows, cols);
+    MATRIX *m = cmat_malloc(rows, cols);
 
     fp = fopen(file, "r");
     for(i = 0; i < rows; i++){

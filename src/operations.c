@@ -4,7 +4,8 @@
 #include "../include/cmat.h"
 
 double cmat_min(MATRIX* m){
-	int i, j, min = cmat_get(m, 0, 0);
+	int i, j;
+    double min = cmat_get(m, 0, 0);
 
 	for(i = 0; i < m->rows; i++){
 		for(j = 0; j < m->cols; j++){
@@ -16,7 +17,8 @@ double cmat_min(MATRIX* m){
 }
 
 double cmat_max(MATRIX* m){
-	int i, j, max = cmat_get(m, 0, 0);
+	int i, j;
+    double max = cmat_get(m, 0, 0);
 
 	for(i = 0; i < m->rows; i++){
 		for(j = 0; j < m->cols; j++){
