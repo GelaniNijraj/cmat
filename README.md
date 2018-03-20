@@ -129,7 +129,8 @@ After installation, include `cmat` and use any of the following functions.
 
 - [x] Transpose
 - [x] Normalization
-- [ ] Determinant and rank of the matrix
+- [x] Determinant
+- [ ] Rank of the matrix
 - [ ] Inverse of a matrix
 - [ ] Gaussian Reduction
 - [ ] Reshaping and merging
